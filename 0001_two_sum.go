@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"reflect"
+	"runtime"
 )
 
 type TestCase struct {
@@ -30,7 +31,7 @@ func main() {
 }
 
 // Accepted, Runtime: 28 ms, Memory Usage: 3.7 MB
-func twoSum(nums []int, target int) (res []int) {
+func twoSum0n2(nums []int, target int) (res []int) {
 out:
 	for i := range nums {
 		for j := i + 1; j < len(nums); j++ {
@@ -41,4 +42,39 @@ out:
 		}
 	}
 	return
+}
+
+// Accepted, Runtime: 32 ms, Memory Usage: 3.7 MB
+func twoSum(nums []int, target int) []int {
+
+	n := runtime.NumCPU()
+	resCh := make(chan []int)
+	length := len(nums)
+
+	incrementer := length / n
+	odd := length % n
+
+	for procI := 1; procI <= n; procI++ {
+		go func(procI int, nums []int, target int, length int, resCh chan []int) {
+			start := (procI-1)*incrementer + odd + 1
+			if procI == 1 {
+				start = 0
+			}
+
+			for i := start; i < length; i++ {
+				for j := i + 1; j < length; j++ {
+					if nums[i]+nums[j] == target {
+						res := []int{i, j}
+						resCh <- res
+					}
+				}
+			}
+
+		}(procI, nums, target, length, resCh)
+	}
+
+	res := <-resCh
+
+	close(resCh)
+	return res
 }
