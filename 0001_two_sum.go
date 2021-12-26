@@ -45,7 +45,7 @@ out:
 }
 
 // Accepted, Runtime: 32 ms, Memory Usage: 3.7 MB
-func twoSum(nums []int, target int) []int {
+func twoSumCPUNumber(nums []int, target int) []int {
 
 	n := runtime.NumCPU()
 	resCh := make(chan []int)
@@ -77,4 +77,20 @@ func twoSum(nums []int, target int) []int {
 
 	close(resCh)
 	return res
+}
+
+// Accepted, Runtime: 4 ms, Memory Usage: 4.2 MB
+func twoSum(nums []int, target int) (res []int) {
+	// [searchForValue]position
+	hashMap := make(map[int]int, len(nums))
+
+	for i := range nums {
+		if position, found := hashMap[nums[i]]; found {
+			return []int{position, i}
+			//do something here
+		} else {
+			hashMap[target-nums[i]] = i
+		}
+	}
+	return
 }
