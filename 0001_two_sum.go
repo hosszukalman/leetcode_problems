@@ -31,6 +31,7 @@ func main() {
 }
 
 // Accepted, Runtime: 28 ms, Memory Usage: 3.7 MB
+// faster than 34.13% of Go online submissions for Two Sum.
 func twoSum0n2(nums []int, target int) (res []int) {
 out:
 	for i := range nums {
@@ -45,6 +46,7 @@ out:
 }
 
 // Accepted, Runtime: 32 ms, Memory Usage: 3.7 MB
+// faster than 24.51% of Go online submissions for Two Sum.
 func twoSumCPUNumber(nums []int, target int) []int {
 
 	n := runtime.NumCPU()
@@ -80,6 +82,7 @@ func twoSumCPUNumber(nums []int, target int) []int {
 }
 
 // Accepted, Runtime: 4 ms, Memory Usage: 4.2 MB
+// faster than 97.00% of Go online submissions for Two Sum.
 func twoSum(nums []int, target int) (res []int) {
 	// [searchForValue]position
 	hashMap := make(map[int]int, len(nums))
