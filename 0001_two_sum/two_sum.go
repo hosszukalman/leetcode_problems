@@ -1,7 +1,10 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
+	"io/ioutil"
+	"log"
 	"reflect"
 	"runtime"
 	"sort"
@@ -17,10 +20,13 @@ type TestCase struct {
 type TestCases []TestCase
 
 func main() {
-	testCases := TestCases{
-		TestCase{[]int{2, 7, 11, 15}, 9, []int{0, 1}},
-		TestCase{[]int{3, 2, 4}, 6, []int{1, 2}},
-		TestCase{[]int{3, 3}, 6, []int{0, 1}},
+	var testCases TestCases
+	jsonFile, err := ioutil.ReadFile("testCases.json")
+	if err != nil {
+		log.Fatal(err)
+	}
+	if err := json.Unmarshal([]byte(jsonFile), &testCases); err != nil {
+		log.Fatal(err)
 	}
 
 	for _, testCase := range testCases {
