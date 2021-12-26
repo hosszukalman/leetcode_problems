@@ -35,7 +35,7 @@ func main() {
 
 // Accepted, Runtime: 12 ms, Memory Usage: 5.2 MB
 // faster than 79.98% of Go online submissions for Palindrome Number
-func isPalindrome(x int) bool {
+func isPalindromeToStr(x int) bool {
 	intString := strconv.Itoa(x)
 	len := len(intString)
 	for i := 0; i < len/2; i++ {
@@ -45,4 +45,32 @@ func isPalindrome(x int) bool {
 	}
 
 	return true
+}
+
+// Accepted, Runtime: 20 ms, Memory Usage: 5 MB
+// faster than 40.33% of Go online submissions for Palindrome Number
+func isPalindrome(x int) bool {
+	if x < 0 {
+		return false
+	}
+
+	modulo := x % 10
+	if modulo == 0 && x != 0 {
+		return false
+	}
+
+	division := x / 10
+	reverseNum := modulo
+	for {
+		if division == 0 {
+			break
+		}
+
+		modulo = division % 10
+		division = division / 10
+
+		reverseNum = reverseNum*10 + modulo
+	}
+
+	return reverseNum == x
 }
