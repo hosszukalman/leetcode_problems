@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"reflect"
 	"runtime"
+	"sort"
 	"sync"
 )
 
@@ -84,7 +85,7 @@ func twoSumCPUNumber(nums []int, target int) []int {
 
 // Accepted, Runtime: 4 ms, Memory Usage: 4.2 MB
 // faster than 97.00% of Go online submissions for Two Sum.
-func twoSum(nums []int, target int) (res []int) {
+func twoSumOn(nums []int, target int) (res []int) {
 	// [searchForValue]position
 	hashMap := make(map[int]int, len(nums))
 
@@ -138,4 +139,54 @@ func twoSumOnCPUNum(nums []int, target int) []int {
 
 	close(resCh)
 	return res
+}
+
+// Accepted, Runtime: 4 ms, Memory Usage: 3.9 MB
+// faster than 97.00% of Go online submissions for Two Sum.
+// Memory usage less than 70.04% of Go online submissions for Two Sum.
+func twoSum(nums []int, target int) (res []int) {
+	orderedNums := make([]int, len(nums))
+	copy(orderedNums, nums)
+	sort.Ints(orderedNums)
+
+	a, b, start := 0, 0, 0
+	end := len(orderedNums) - 1
+
+	for {
+		if start >= end {
+			break
+		}
+
+		sum := orderedNums[start] + orderedNums[end]
+		if sum < target {
+			start++
+		} else if sum > target {
+			end--
+		} else {
+			a = orderedNums[start]
+			b = orderedNums[end]
+			break
+		}
+	}
+
+	foundA, foundB := false, false
+	for i, num := range nums {
+		if num == a {
+			res = append(res, i)
+			foundA = true
+			if a == b {
+				continue
+			}
+		}
+		if num == b {
+			res = append(res, i)
+			foundB = true
+		}
+
+		if foundA && foundB {
+			return
+		}
+	}
+
+	return
 }
