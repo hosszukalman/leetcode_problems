@@ -49,7 +49,7 @@ func isPalindromeToStr(x int) bool {
 
 // Accepted, Runtime: 20 ms, Memory Usage: 5 MB
 // faster than 40.33% of Go online submissions for Palindrome Number
-func isPalindrome(x int) bool {
+func isPalindromeDivision(x int) bool {
 	if x < 0 {
 		return false
 	}
@@ -70,6 +70,22 @@ func isPalindrome(x int) bool {
 		division = division / 10
 
 		reverseNum = reverseNum*10 + modulo
+	}
+
+	return reverseNum == x
+}
+
+// Accepted, Runtime: 16 ms, Memory Usage: 5 MB
+// faster than 59.38% of Go online submissions for Palindrome Number
+func isPalindrome(x int) bool {
+	if x < 0 {
+		return false
+	}
+
+	reverseNum := 0
+
+	for i := x; i != 0; i /= 10 {
+		reverseNum = reverseNum*10 + i%10
 	}
 
 	return reverseNum == x
