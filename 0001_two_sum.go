@@ -28,3 +28,17 @@ func main() {
 	}
 
 }
+
+// Accepted, Runtime: 28 ms, Memory Usage: 3.7 MB
+func twoSum(nums []int, target int) (res []int) {
+out:
+	for i := range nums {
+		for j := i + 1; j < len(nums); j++ {
+			if nums[i]+nums[j] == target {
+				res = []int{i, j}
+				break out
+			}
+		}
+	}
+	return
+}
