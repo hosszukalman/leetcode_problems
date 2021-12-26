@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"reflect"
 	"runtime"
+	"sync"
 )
 
 type TestCase struct {
@@ -90,10 +91,51 @@ func twoSum(nums []int, target int) (res []int) {
 	for i := range nums {
 		if position, found := hashMap[nums[i]]; found {
 			return []int{position, i}
-			//do something here
 		} else {
 			hashMap[target-nums[i]] = i
 		}
 	}
 	return
+}
+
+// Accepted, Runtime: 8 ms, Memory Usage: 4.7 MB
+// faster than 54.82% of Go online submissions for Two Sum.
+func twoSumOnCPUNum(nums []int, target int) []int {
+	n := runtime.NumCPU()
+	resCh := make(chan []int)
+	length := len(nums)
+
+	incrementer := length / n
+	odd := length % n
+
+	// [searchForValue]position
+	hashMap := make(map[int]int, len(nums))
+
+	var lock = sync.RWMutex{}
+
+	for procI := 1; procI <= n; procI++ {
+		go func(procI int, nums []int, target int, length int, resCh chan []int) {
+			start := (procI-1)*incrementer + odd + 1
+			if procI == 1 {
+				start = 0
+			}
+
+			for i := start; i < length; i++ {
+				lock.Lock()
+				if position, found := hashMap[nums[i]]; found {
+					res := []int{position, i}
+					resCh <- res
+				} else {
+					hashMap[target-nums[i]] = i
+				}
+				lock.Unlock()
+			}
+
+		}(procI, nums, target, length, resCh)
+	}
+
+	res := <-resCh
+
+	close(resCh)
+	return res
 }
