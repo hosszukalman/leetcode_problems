@@ -166,7 +166,7 @@ func romanToInt3(s string) (res int) {
 
 // Accepted, Runtime: 4 ms, Memory Usage: 3,2 MB
 // 4 ms, faster than 88.21% of Go online submissions for Roman to Integer.
-func romanToInt(s string) (res int) {
+func romanToInt4(s string) (res int) {
 	charMap := map[string]int{
 		"I": 1,
 		"V": 5,
@@ -190,6 +190,36 @@ func romanToInt(s string) (res int) {
 			res += charMap[currentChar]
 			prevChar = currentChar
 		}
+	}
+	return
+}
+
+// Accepted, Runtime: 0 ms, Memory Usage: 3,2 MB
+// faster than 100.00% of Go online submissions for Roman to Integer.
+func romanToInt(s string) (res int) {
+	charMap := map[string]int{
+		"I": 1,
+		"V": 5,
+		"X": 10,
+		"L": 50,
+		"C": 100,
+		"D": 500,
+		"M": 1000,
+	}
+	var prevChar string
+	for i := len(s) - 1; i >= 0; i-- {
+		currentChar := string(s[i])
+		switch {
+		case currentChar == "I" && (prevChar == "V" || prevChar == "X"):
+			res -= 1
+		case currentChar == "X" && (prevChar == "L" || prevChar == "C"):
+			res -= 10
+		case currentChar == "C" && (prevChar == "D" || prevChar == "M"):
+			res -= 100
+		default:
+			res += charMap[currentChar]
+		}
+		prevChar = currentChar
 	}
 	return
 }
