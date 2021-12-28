@@ -33,3 +33,13 @@ https://leetcode.com/problems/roman-to-integer/
 Runtime: 0 ms, Memory Usage: 3 MB
 
 Faster than 100% of Go online submissions for Roman to Integer.
+
+### 14. Longest Common Prefix
+
+https://leetcode.com/problems/longest-common-prefix/
+
+#### Go
+
+Runtime: 0 ms, Memory Usage: 2.4 MB
+
+Faster than 100% of Go online submissions for Longest Common Prefix.

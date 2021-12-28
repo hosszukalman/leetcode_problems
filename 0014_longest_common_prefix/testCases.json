@@ -1,0 +1,10 @@
+[
+  {
+    "Input": ["flower","flow","flight"],
+    "ExpectedResult": "fl"
+  },
+  {
+    "Input": ["dog","racecar","car"],
+    "ExpectedResult": ""
+  }
+]
