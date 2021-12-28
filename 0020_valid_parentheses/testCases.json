@@ -1,0 +1,26 @@
+[
+  {
+    "Input": "()",
+    "ExpectedResult": true
+  },
+  {
+    "Input": "[",
+    "ExpectedResult": false
+  },
+  {
+    "Input": "()[]{}",
+    "ExpectedResult": true
+  },
+  {
+    "Input": "(]",
+    "ExpectedResult": false
+  },
+  {
+    "Input": "([]{}([{}]))",
+    "ExpectedResult": true
+  },
+  {
+    "Input": "([]{}([]{}]))",
+    "ExpectedResult": false
+  }
+]

@@ -43,3 +43,13 @@ https://leetcode.com/problems/longest-common-prefix/
 Runtime: 0 ms, Memory Usage: 2.4 MB
 
 Faster than 100% of Go online submissions for Longest Common Prefix.
+
+### 20. Valid Parentheses
+
+https://leetcode.com/problems/valid-parentheses/
+
+#### Go
+
+Runtime: 0 ms, Memory Usage: 2.2 MB
+
+Faster than 100% of Go online submissions for Valid Parentheses.
