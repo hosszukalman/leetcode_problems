@@ -3,14 +3,14 @@
     "Input": [1,1,2],
     "ExpectedResult": {
       "Result": 2,
-      "ModifiedInput": [1,2,2]
+      "ModifiedInput": [1,2]
     }
   },
   {
     "Input": [0,0,1,1,1,2,2,3,3,4],
     "ExpectedResult": {
       "Result": 5,
-      "ModifiedInput": [0,1,2,3,4,4,4,4,4,4]
+      "ModifiedInput": [0,1,2,3,4]
     }
   },
   {
@@ -31,7 +31,7 @@
     "Input": [-1,0,0,0,0,3,3],
     "ExpectedResult": {
       "Result": 3,
-      "ModifiedInput": [-1,0,3,3,3,3,3]
+      "ModifiedInput": [-1,0,3]
     }
   }
 ]

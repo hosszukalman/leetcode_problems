@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
-	"reflect"
 )
 
 type TestCase struct {
@@ -32,8 +31,19 @@ func main() {
 		var input = make([]int, len(testCase.Input))
 		copy(input, testCase.Input)
 		res := removeDuplicates(input)
-		if testCase.ExpectedResult.Result != res || !reflect.DeepEqual(input, testCase.ExpectedResult.ModifiedInput) {
+		if testCase.ExpectedResult.Result != res {
 			fmt.Printf("Something is not ok with the result: Test case: %+v, result: %+v, modified input: %+v\n", testCase, res, input)
+		} else {
+			ok := true
+			for i := 0; i < res; i++ {
+				if input[i] != testCase.ExpectedResult.ModifiedInput[i] {
+					ok = false
+					break
+				}
+			}
+			if !ok {
+				fmt.Printf("Something is not ok with the result: Test case: %+v, result: %+v, modified input: %+v\n", testCase, res, input)
+			}
 		}
 	}
 }
