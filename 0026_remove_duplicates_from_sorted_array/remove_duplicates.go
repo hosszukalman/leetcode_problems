@@ -102,3 +102,51 @@ func removeDuplicates(nums []int) (res int) {
 	}
 	return
 }
+
+// Accepted, Runtime: 8 ms, Memory Usage: 4.4 MB
+// Runtime: 8 ms, faster than 84.89% of Go online submissions for Remove Duplicates from Sorted Array.
+func removeDuplicates4(nums []int) (res int) {
+	if len(nums) == 0 {
+		return
+	}
+	res = 1
+	i := 0
+	for i = 0; i < len(nums); i++ {
+		if nums[i] > nums[res-1] {
+			nums[res] = nums[i]
+			res++
+		}
+		if nums[i] < nums[res-1] {
+			break
+		}
+	}
+
+	return
+}
+
+// Accepted, Runtime: 8 ms, Memory Usage: 4.4 MB
+// Runtime: 8 ms, faster than 84.89% of Go online submissions for Remove Duplicates from Sorted Array.
+func removeDuplicates5(nums []int) (res int) {
+	prev := -101
+	for i := 0; i < len(nums); i++ {
+		if prev < nums[i] {
+			res++
+			prev = nums[i]
+		} else {
+			j := 1
+			for j = 1; i+j < len(nums); j++ {
+				if prev > nums[i+j] {
+					return
+				}
+				if prev < nums[i+j] {
+					nums[res] = nums[i+j]
+					prev = nums[i+j]
+					res++
+					i = i + j - 1
+					break
+				}
+			}
+		}
+	}
+	return
+}

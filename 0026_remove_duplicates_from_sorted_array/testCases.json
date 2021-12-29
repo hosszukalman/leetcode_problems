@@ -33,5 +33,26 @@
       "Result": 3,
       "ModifiedInput": [-1,0,3]
     }
+  },
+  {
+    "Input": [],
+    "ExpectedResult": {
+      "Result": 0,
+      "ModifiedInput": []
+    }
+  },
+  {
+    "Input": [1,1,1],
+    "ExpectedResult": {
+      "Result": 1,
+      "ModifiedInput": [1]
+    }
+  },
+  {
+    "Input": [1,1,2,3],
+    "ExpectedResult": {
+      "Result": 3,
+      "ModifiedInput": [1,2,3]
+    }
   }
 ]
