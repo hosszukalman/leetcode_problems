@@ -1,0 +1,64 @@
+[
+  {
+    "List1": {
+      "Val": 1,
+      "Next": {
+        "Val": 2,
+        "Next": {
+          "Val": 4
+        }
+      }
+    },
+    "List2": {
+      "Val": 1,
+      "Next": {
+        "Val": 3,
+        "Next": {
+          "Val": 4
+        }
+      }
+    },
+    "ExpectedResult": {
+      "Val": 1,
+      "Next": {
+        "Val": 1,
+        "Next": {
+          "Val": 2,
+          "Next": {
+            "Val": 3,
+            "Next":{
+              "Val": 4,
+              "Next": {
+                "Val": 4
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+  },
+  {
+    "List2": {
+      "Val": 0
+    },
+    "ExpectedResult": {
+      "Val": 0
+    }
+  },
+  {
+    "List1": {
+      "Val": 2
+    },
+    "List2": {
+      "Val": 1
+    },
+    "ExpectedResult": {
+      "Val": 1,
+      "Next": {
+        "Val": 2
+      }
+    }
+  }
+]

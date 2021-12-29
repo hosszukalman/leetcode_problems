@@ -53,3 +53,13 @@ https://leetcode.com/problems/valid-parentheses/
 Runtime: 0 ms, Memory Usage: 2.2 MB
 
 Faster than 100% of Go online submissions for Valid Parentheses.
+
+### 21. Merge Two Sorted Lists
+
+https://leetcode.com/problems/merge-two-sorted-lists/
+
+#### Go
+
+Runtime: 0 ms, Memory Usage: 2.7 MB
+
+Faster than 100% of Go online submissions for Merge Two Sorted Lists.
