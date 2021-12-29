@@ -66,3 +66,12 @@ https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 
 Runtime: 5 ms, Memory Usage: 4.6 MB  
 Faster than 86.46% of Go online submissions for Remove Duplicates from Sorted Array.
+
+### 27. Remove Element
+
+https://leetcode.com/problems/remove-element/
+
+#### Go
+
+Runtime: 0 ms, Memory Usage: 2.2 MB  
+Faster than 100.00% of Go online submissions for Remove Element.
