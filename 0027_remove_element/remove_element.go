@@ -66,7 +66,7 @@ func removeElement1(nums []int, val int) (res int) {
 	return
 }
 
-// // Accepted, Runtime: 0 ms, Memory Usage: 2.2 MB
+// Accepted, Runtime: 0 ms, Memory Usage: 2.2 MB
 // Runtime: 0 ms, faster than 100.00% of Go online submissions for Remove Element.
 func removeElement(nums []int, val int) (res int) {
 	i := 0

@@ -75,3 +75,12 @@ https://leetcode.com/problems/remove-element/
 
 Runtime: 0 ms, Memory Usage: 2.2 MB  
 Faster than 100.00% of Go online submissions for Remove Element.
+
+### 28. Implement strStr()
+
+https://leetcode.com/problems/implement-strstr/
+
+#### Go
+
+Runtime: 0 ms, Memory Usage: 2.5 MB  
+Faster than 100.00% of Go online submissions for Implement strStr().
