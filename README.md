@@ -13,6 +13,15 @@ https://leetcode.com/problems/two-sum/
 Runtime: 4 ms, Memory Usage: 3.9 MB  
 Faster than 97.00% of Go online submissions for Two Sum.
 
+### 2. Add Two Numbers
+
+https://leetcode.com/problems/add-two-numbers/
+
+#### Go
+
+Runtime: 8 ms, Memory Usage: 4.8 MB  
+Faster than 85.88% of Go online submissions for Add Two Numbers.
+
 ### 9. Palindrome Number
 
 https://leetcode.com/problems/palindrome-number/

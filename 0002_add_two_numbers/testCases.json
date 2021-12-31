@@ -1,0 +1,117 @@
+[
+  {
+    "List1": {
+      "Val": 2,
+      "Next": {
+        "Val": 4,
+        "Next": {
+          "Val": 3
+        }
+      }
+    },
+    "List2": {
+      "Val": 5,
+      "Next": {
+        "Val": 6,
+        "Next": {
+          "Val": 4
+        }
+      }
+    },
+    "ExpectedResult": {
+      "Val": 7,
+      "Next": {
+        "Val": 0,
+        "Next": {
+          "Val": 8
+        }
+      }
+    }
+  },
+  {
+  },
+  {
+    "List1": {
+      "Val": 5
+    },
+    "List2": {
+      "Val": 5
+    },
+    "ExpectedResult": {
+      "Val": 0,
+      "Next": {
+        "Val": 1
+      }
+    }
+  },
+  {
+    "List1": {
+      "Val": 0
+    },
+    "List2": {
+      "Val": 0
+    },
+    "ExpectedResult": {
+      "Val": 0
+    }
+  },
+  {
+    "List1": {
+      "Val": 9,
+      "Next": {
+        "Val": 9,
+        "Next": {
+          "Val": 9,
+          "Next": {
+            "Val": 9,
+            "Next": {
+              "Val": 9,
+              "Next": {
+                "Val": 9,
+                "Next": {
+                  "Val": 9
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "List2": {
+      "Val": 9,
+      "Next": {
+        "Val": 9,
+        "Next": {
+          "Val": 9,
+          "Next": {
+            "Val": 9
+          }
+        }
+      }
+    },
+    "ExpectedResult": {
+      "Val": 8,
+      "Next": {
+        "Val": 9,
+        "Next": {
+          "Val": 9,
+          "Next": {
+            "Val": 9,
+            "Next":{
+              "Val": 0,
+              "Next": {
+                "Val": 0,
+                "Next":{
+                  "Val": 0,
+                  "Next": {
+                    "Val": 1
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]
