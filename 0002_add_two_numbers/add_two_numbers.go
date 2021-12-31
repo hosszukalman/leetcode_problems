@@ -56,7 +56,7 @@ func main() {
 
 // Accepted, Runtime: 8 ms, Memory Usage: 4.8 MB
 // Runtime: 8 ms, faster than 85.88% of Go online submissions for Add Two Numbers.
-func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+func addTwoNumbers1(l1 *ListNode, l2 *ListNode) *ListNode {
 	if l1 == nil {
 		return l2
 	}
@@ -195,4 +195,35 @@ func addTwoNumbers3(l1 *ListNode, l2 *ListNode) *ListNode {
 	}
 
 	return res.Next
+}
+
+// Accepted, Runtime: 3 ms, Memory Usage: 4.9 MB
+// Runtime: 3 ms, faster than 98.17% of Go online submissions for Add Two Numbers.
+func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+	if l1 == nil {
+		return l2
+	}
+	if l2 == nil {
+		return l1
+	}
+
+	carry := 0
+	head := new(ListNode)
+	current := head
+
+	for l1 != nil || l2 != nil || carry != 0 {
+		v1, v2 := 0, 0
+		if l1 != nil {
+			v1, l1 = l1.Val, l1.Next
+		}
+		if l2 != nil {
+			v2, l2 = l2.Val, l2.Next
+		}
+		sum := v1 + v2 + carry
+		carry = sum / 10
+		current.Next = &ListNode{sum % 10, nil}
+		current = current.Next
+	}
+
+	return head.Next
 }
