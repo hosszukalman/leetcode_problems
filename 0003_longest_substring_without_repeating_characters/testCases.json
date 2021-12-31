@@ -1,0 +1,38 @@
+[
+  {
+    "Input": "abcabcbb",
+    "ExpectedResult": 3
+  },
+  {
+    "Input": "bbbbb",
+    "ExpectedResult": 1
+  },
+  {
+    "Input": "pwwkew",
+    "ExpectedResult": 3
+  },
+  {
+    "Input": "au",
+    "ExpectedResult": 2
+  },
+  {
+    "Input": "",
+    "ExpectedResult": 0
+  },
+  {
+    "Input": "bwf",
+    "ExpectedResult": 3
+  },
+  {
+    "Input": "aab",
+    "ExpectedResult": 2
+  },
+  {
+    "Input": "dvdf",
+    "ExpectedResult": 3
+  },
+  {
+    "Input": "ddvfdfgi",
+    "ExpectedResult": 4
+  }
+]

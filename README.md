@@ -22,6 +22,15 @@ https://leetcode.com/problems/add-two-numbers/
 Runtime: 3 ms, Memory Usage: 4.9 MB  
 Faster than 98.17% of Go online submissions for Add Two Numbers.
 
+### 3. Longest Substring Without Repeating Characters
+
+https://leetcode.com/problems/longest-substring-without-repeating-characters/
+
+#### Go
+
+Runtime: 0 ms, Memory Usage: 3.2 MB  
+Faster than 100.00% of Go online submissions for Longest Substring Without Repeating Characters.
+
 ### 9. Palindrome Number
 
 https://leetcode.com/problems/palindrome-number/
