@@ -102,3 +102,12 @@ https://leetcode.com/problems/implement-strstr/
 
 Runtime: 0 ms, Memory Usage: 2.5 MB  
 Faster than 100.00% of Go online submissions for Implement strStr().
+
+### 67. Add Binary
+
+https://leetcode.com/problems/add-binary/
+
+#### Go
+
+Runtime: 0 ms, Memory Usage: 2.3 MB  
+Faster than 100.00% of Go online submissions for Add Binary.
