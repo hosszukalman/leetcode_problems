@@ -14,35 +14,6 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
-// func (tn *TreeNode) String() (s string) {
-// 	if tn == nil {
-// 		// fmt.Printf("nill", tn.Val)
-// 	} else {
-// 		// fmt.Printf("%d -> ", tn.Val)
-// 		// s += fmt.Sprintf("%d -> ", tn.Val)
-// 		// tn.Left.String()
-// 		// tn.Right.String()
-// 	}
-// 	// for tn.Left != nil || tn.Right != nil {
-// 	// 	s += fmt.Sprintf("%v -> ", ln.Val)
-// 	// 	ln = ln.Next
-// 	// }
-
-// 	return
-// }
-
-// func (ln *ListNode) String() (s string) {
-// 	if ln == nil {
-// 		return "nil"
-// 	}
-// 	for ln != nil {
-// 		s += fmt.Sprintf("%v -> ", ln.Val)
-// 		ln = ln.Next
-// 	}
-
-// 	return
-// }
-
 type TestCase struct {
 	Input          *TreeNode
 	ExpectedResult int
