@@ -1,0 +1,32 @@
+[
+  {
+    "Input": {
+      "Val": 1,
+      "Left": {
+        "Val": 0,
+        "Left": {
+          "Val": 0
+        },
+        "Right": {
+          "Val": 1
+        }
+      },
+      "Right": {
+        "Val": 1,
+        "Left": {
+          "Val": 0
+        },
+        "Right": {
+          "Val": 1
+        }
+      }
+    },
+    "ExpectedResult": 22
+  },
+  {
+    "Input": {
+      "Val": 0
+    },
+    "ExpectedResult": 0
+  }
+]
