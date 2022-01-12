@@ -109,7 +109,7 @@ https://leetcode.com/problems/add-binary/
 
 #### Go
 
-Runtime: 0 ms, Memory Usage: 2.3 MB  
+Runtime: 0 ms, Memory Usage: 3 MB  
 Faster than 100.00% of Go online submissions for Add Binary.
 
 ### 1022. Sum of Root To Leaf Binary Numbers

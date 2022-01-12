@@ -37,7 +37,7 @@ func main() {
 
 // Accepted, Runtime: 0 ms, Memory Usage: 2.3 MB
 // Runtime: 0 ms, faster than 100.00% of Go online submissions for Add Binary.
-func addBinary(a string, b string) string {
+func addBinary1(a string, b string) string {
 	n1 := new(big.Int)
 	n1.SetString(a, 2)
 	n2 := new(big.Int)
@@ -90,4 +90,38 @@ func addBinary2(a string, b string) string {
 	}
 
 	return string(Runes(res).ReverseString())
+}
+
+// Accepted, Runtime: 0 ms, Memory Usage: 3 MB
+// Runtime: 0 ms, faster than 100.00% of Go online submissions for Add Binary.
+func addBinary(a string, b string) (res string) {
+	i, j, carry := len(a)-1, len(b)-1, 0
+	for i >= 0 || j >= 0 {
+		sum := carry
+		var val int64
+		if i >= 0 {
+			val, _ = strconv.ParseInt(string(a[i]), 2, 2)
+			sum += int(val)
+			i--
+		}
+		if j >= 0 {
+			val, _ = strconv.ParseInt(string(b[j]), 2, 2)
+			sum += int(val)
+			j--
+		}
+
+		if sum > 1 {
+			carry = 1
+		} else {
+			carry = 0
+		}
+
+		res = fmt.Sprintf("%v%v", sum%2, res)
+	}
+
+	if carry != 0 {
+		res = "1" + res
+	}
+
+	return
 }
