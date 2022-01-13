@@ -112,6 +112,15 @@ https://leetcode.com/problems/add-binary/
 Runtime: 0 ms, Memory Usage: 3 MB  
 Faster than 100.00% of Go online submissions for Add Binary.
 
+### 701. Insert into a Binary Search Tree
+
+https://leetcode.com/problems/insert-into-a-binary-search-tree/
+
+#### Go
+
+Accepted, Runtime: 28 ms, Memory Usage: 7.5 MB  
+Faster than 92.76% of Go online submissions for Insert into a Binary Search Tree.
+
 ### 1022. Sum of Root To Leaf Binary Numbers
 
 https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/

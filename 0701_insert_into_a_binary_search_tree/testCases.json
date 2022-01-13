@@ -1,0 +1,38 @@
+[
+  {
+    "InputTree": {
+      "Val": 4,
+      "Left": {
+        "Val": 2,
+        "Left": {
+          "Val": 1
+        },
+        "Right": {
+          "Val": 3
+        }
+      },
+      "Right": {
+        "Val": 7
+      }
+    },
+    "InputVal": 5,
+    "ExpectedResult": {
+      "Val": 4,
+      "Left": {
+        "Val": 2,
+        "Left": {
+          "Val": 1
+        },
+        "Right": {
+          "Val": 3
+        }
+      },
+      "Right": {
+        "Val": 7,
+        "Left": {
+          "Val": 5
+        }
+      }
+    }
+  }
+]
