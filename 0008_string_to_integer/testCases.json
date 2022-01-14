@@ -1,0 +1,26 @@
+[
+  {
+    "Input": "42",
+    "ExpectedResult": 42
+  },
+  {
+    "Input": "   -42",
+    "ExpectedResult": -42
+  },
+  {
+    "Input": "4193 with words",
+    "ExpectedResult": 4193
+  },
+  {
+    "Input": "4294967295  with words",
+    "ExpectedResult": 2147483647
+  },
+  {
+    "Input": "-91283472332",
+    "ExpectedResult": -2147483648
+  },
+  {
+    "Input": "+-12",
+    "ExpectedResult": 0
+  }
+]

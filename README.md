@@ -31,6 +31,15 @@ https://leetcode.com/problems/longest-substring-without-repeating-characters/
 Runtime: 0 ms, Memory Usage: 3.2 MB  
 Faster than 100.00% of Go online submissions for Longest Substring Without Repeating Characters.
 
+### 8. String to Integer (atoi)
+
+https://leetcode.com/problems/string-to-integer-atoi/submissions/
+
+#### Go
+
+Runtime: 0 ms, Memory Usage: 2.3 MB  
+Faster than 100.00% of Go online submissions for String to Integer (atoi).
+
 ### 9. Palindrome Number
 
 https://leetcode.com/problems/palindrome-number/
