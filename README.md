@@ -121,6 +121,15 @@ https://leetcode.com/problems/add-binary/
 Runtime: 0 ms, Memory Usage: 3 MB  
 Faster than 100.00% of Go online submissions for Add Binary.
 
+### 290. Word Pattern
+
+https://leetcode.com/problems/word-pattern/
+
+#### Go
+
+Runtime: 0 ms, Memory Usage: 2 MB  
+Faster than 100.00% of Go online submissions for Word Pattern.
+
 ### 701. Insert into a Binary Search Tree
 
 https://leetcode.com/problems/insert-into-a-binary-search-tree/
