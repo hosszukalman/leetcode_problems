@@ -16,7 +16,7 @@
       }
     },
     "InputVal": 5,
-    "ExpectedResult": {
+    "AcceptedResult": {
       "Val": 4,
       "Left": {
         "Val": 2,

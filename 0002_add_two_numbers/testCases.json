@@ -18,7 +18,7 @@
         }
       }
     },
-    "ExpectedResult": {
+    "AcceptedResult": {
       "Val": 7,
       "Next": {
         "Val": 0,
@@ -37,7 +37,7 @@
     "List2": {
       "Val": 5
     },
-    "ExpectedResult": {
+    "AcceptedResult": {
       "Val": 0,
       "Next": {
         "Val": 1
@@ -51,7 +51,7 @@
     "List2": {
       "Val": 0
     },
-    "ExpectedResult": {
+    "AcceptedResult": {
       "Val": 0
     }
   },
@@ -89,7 +89,7 @@
         }
       }
     },
-    "ExpectedResult": {
+    "AcceptedResult": {
       "Val": 8,
       "Next": {
         "Val": 9,

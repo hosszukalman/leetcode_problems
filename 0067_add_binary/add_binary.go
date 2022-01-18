@@ -12,7 +12,7 @@ import (
 type TestCase struct {
 	Input1         string
 	Input2         string
-	ExpectedResult string
+	AcceptedResult string
 }
 
 type TestCases []TestCase
@@ -29,7 +29,7 @@ func main() {
 
 	for _, testCase := range testCases {
 		res := addBinary(testCase.Input1, testCase.Input2)
-		if testCase.ExpectedResult != res {
+		if testCase.AcceptedResult != res {
 			fmt.Printf("Something is not ok with the result: Test case: %#v, res: %+v\n", testCase, res)
 		}
 	}

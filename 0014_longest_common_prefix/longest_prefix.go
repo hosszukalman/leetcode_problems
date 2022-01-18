@@ -10,7 +10,7 @@ import (
 
 type TestCase struct {
 	Input          []string
-	ExpectedResult string
+	AcceptedResult string
 }
 
 type TestCases []TestCase
@@ -27,7 +27,7 @@ func main() {
 
 	for _, testCase := range testCases {
 		res := longestCommonPrefix(testCase.Input)
-		if testCase.ExpectedResult != res {
+		if testCase.AcceptedResult != res {
 			fmt.Printf("Something is not ok with the result: Test case: %#v, res: %+v\n", testCase, res)
 		}
 	}

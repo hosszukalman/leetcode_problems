@@ -11,7 +11,7 @@ import (
 type TestCase struct {
 	InputHaystack  string
 	InputNeedle    string
-	ExpectedResult int
+	AcceptedResult int
 }
 
 type TestCases []TestCase
@@ -28,7 +28,7 @@ func main() {
 
 	for _, testCase := range testCases {
 		res := strStr(testCase.InputHaystack, testCase.InputNeedle)
-		if testCase.ExpectedResult != res {
+		if testCase.AcceptedResult != res {
 			fmt.Printf("Something is not ok with the result: Test case: %#v, res: %+v\n", testCase, res)
 		}
 	}

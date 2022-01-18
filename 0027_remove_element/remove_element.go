@@ -11,7 +11,7 @@ import (
 type TestCase struct {
 	InputNums      []int
 	InputVal       int
-	ExpectedResult struct {
+	AcceptedResult struct {
 		Result        int
 		ModifiedInput []int
 	}
@@ -33,13 +33,13 @@ func main() {
 		var input = make([]int, len(testCase.InputNums))
 		copy(input, testCase.InputNums)
 		res := removeElement(input, testCase.InputVal)
-		if testCase.ExpectedResult.Result != res {
+		if testCase.AcceptedResult.Result != res {
 			fmt.Printf("Something is not ok with the result: Test case: %+v, result: %+v, modified input: %+v\n", testCase, res, input)
 		} else {
 			ok := true
 			sort.Ints(input)
 			for i := 0; i < res; i++ {
-				if input[i] != testCase.ExpectedResult.ModifiedInput[i] {
+				if input[i] != testCase.AcceptedResult.ModifiedInput[i] {
 					ok = false
 					break
 				}

@@ -31,7 +31,7 @@ func (ln *ListNode) String() (s string) {
 type TestCase struct {
 	List1          *ListNode
 	List2          *ListNode
-	ExpectedResult *ListNode
+	AcceptedResult *ListNode
 }
 
 type TestCases []TestCase
@@ -48,8 +48,8 @@ func main() {
 
 	for _, testCase := range testCases {
 		res := addTwoNumbers(testCase.List1, testCase.List2)
-		if !reflect.DeepEqual(testCase.ExpectedResult, res) {
-			fmt.Printf("Something is not ok with the result: list1: %v, list2: %v, excepted: %v, res: %+v\n", testCase.List1, testCase.List2, testCase.ExpectedResult, res)
+		if !reflect.DeepEqual(testCase.AcceptedResult, res) {
+			fmt.Printf("Something is not ok with the result: list1: %v, list2: %v, excepted: %v, res: %+v\n", testCase.List1, testCase.List2, testCase.AcceptedResult, res)
 		}
 	}
 }

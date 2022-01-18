@@ -21,12 +21,12 @@
         }
       }
     },
-    "ExpectedResult": 22
+    "AcceptedResult": 22
   },
   {
     "Input": {
       "Val": 0
     },
-    "ExpectedResult": 0
+    "AcceptedResult": 0
   }
 ]

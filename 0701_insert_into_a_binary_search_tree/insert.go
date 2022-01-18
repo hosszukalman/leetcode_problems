@@ -17,7 +17,7 @@ type TreeNode struct {
 type TestCase struct {
 	InputTree      *TreeNode
 	InputVal       int
-	ExpectedResult *TreeNode
+	AcceptedResult *TreeNode
 }
 
 type TestCases []TestCase
@@ -34,10 +34,10 @@ func main() {
 
 	for _, testCase := range testCases {
 		res := insertIntoBST(testCase.InputTree, testCase.InputVal)
-		if !reflect.DeepEqual(testCase.ExpectedResult, res) {
+		if !reflect.DeepEqual(testCase.AcceptedResult, res) {
 			printPreOrder(testCase.InputTree)
 			fmt.Println()
-			printPreOrder(testCase.ExpectedResult)
+			printPreOrder(testCase.AcceptedResult)
 			fmt.Println()
 			printPreOrder(res)
 			fmt.Println()

@@ -1,56 +1,56 @@
 [
   {
     "Input": [1,1,2],
-    "ExpectedResult": {
+    "AcceptedResult": {
       "Result": 2,
       "ModifiedInput": [1,2]
     }
   },
   {
     "Input": [0,0,1,1,1,2,2,3,3,4],
-    "ExpectedResult": {
+    "AcceptedResult": {
       "Result": 5,
       "ModifiedInput": [0,1,2,3,4]
     }
   },
   {
     "Input": [1,2],
-    "ExpectedResult": {
+    "AcceptedResult": {
       "Result": 2,
       "ModifiedInput": [1,2]
     }
   },
   {
     "Input": [1,2,3,4,5,6],
-    "ExpectedResult": {
+    "AcceptedResult": {
       "Result": 6,
       "ModifiedInput": [1,2,3,4,5,6]
     }
   },
   {
     "Input": [-1,0,0,0,0,3,3],
-    "ExpectedResult": {
+    "AcceptedResult": {
       "Result": 3,
       "ModifiedInput": [-1,0,3]
     }
   },
   {
     "Input": [],
-    "ExpectedResult": {
+    "AcceptedResult": {
       "Result": 0,
       "ModifiedInput": []
     }
   },
   {
     "Input": [1,1,1],
-    "ExpectedResult": {
+    "AcceptedResult": {
       "Result": 1,
       "ModifiedInput": [1]
     }
   },
   {
     "Input": [1,1,2,3],
-    "ExpectedResult": {
+    "AcceptedResult": {
       "Result": 3,
       "ModifiedInput": [1,2,3]
     }

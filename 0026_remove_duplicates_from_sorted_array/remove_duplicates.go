@@ -9,7 +9,7 @@ import (
 
 type TestCase struct {
 	Input          []int
-	ExpectedResult struct {
+	AcceptedResult struct {
 		Result        int
 		ModifiedInput []int
 	}
@@ -31,12 +31,12 @@ func main() {
 		var input = make([]int, len(testCase.Input))
 		copy(input, testCase.Input)
 		res := removeDuplicates(input)
-		if testCase.ExpectedResult.Result != res {
+		if testCase.AcceptedResult.Result != res {
 			fmt.Printf("Something is not ok with the result: Test case: %+v, result: %+v, modified input: %+v\n", testCase, res, input)
 		} else {
 			ok := true
 			for i := 0; i < res; i++ {
-				if input[i] != testCase.ExpectedResult.ModifiedInput[i] {
+				if input[i] != testCase.AcceptedResult.ModifiedInput[i] {
 					ok = false
 					break
 				}

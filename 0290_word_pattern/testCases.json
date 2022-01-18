@@ -2,21 +2,21 @@
   {
     "InputPattern": "abba",
     "InputString": "dog cat cat dog",
-    "ExpectedResult": true
+    "AcceptedResult": true
   },
   {
     "InputPattern": "abba",
     "InputString": "dog cat cat fish",
-    "ExpectedResult": false
+    "AcceptedResult": false
   },
   {
     "InputPattern": "aaaa",
     "InputString": "dog cat cat dog",
-    "ExpectedResult": false
+    "AcceptedResult": false
   },
   {
     "InputPattern": "abba",
     "InputString": "dog dog dog dog",
-    "ExpectedResult": false
+    "AcceptedResult": false
   }
 ]

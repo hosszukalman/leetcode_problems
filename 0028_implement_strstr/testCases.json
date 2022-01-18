@@ -2,26 +2,26 @@
   {
     "InputHaystack": "hello",
     "InputNeedle": "ll",
-    "ExpectedResult": 2
+    "AcceptedResult": 2
   },
   {
     "InputHaystack": "aaaaa",
     "InputNeedle": "bba",
-    "ExpectedResult": -1
+    "AcceptedResult": -1
   },
   {
     "InputHaystack": "",
     "InputNeedle": "",
-    "ExpectedResult": 0
+    "AcceptedResult": 0
   },
   {
     "InputHaystack": "aaa",
     "InputNeedle": "aaaa",
-    "ExpectedResult": -1
+    "AcceptedResult": -1
   },
   {
     "InputHaystack": "a",
     "InputNeedle": "a",
-    "ExpectedResult": 0
+    "AcceptedResult": 0
   }
 ]

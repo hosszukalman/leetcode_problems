@@ -1,26 +1,26 @@
 [
   {
     "Input": "()",
-    "ExpectedResult": true
+    "AcceptedResult": true
   },
   {
     "Input": "[",
-    "ExpectedResult": false
+    "AcceptedResult": false
   },
   {
     "Input": "()[]{}",
-    "ExpectedResult": true
+    "AcceptedResult": true
   },
   {
     "Input": "(]",
-    "ExpectedResult": false
+    "AcceptedResult": false
   },
   {
     "Input": "([]{}([{}]))",
-    "ExpectedResult": true
+    "AcceptedResult": true
   },
   {
     "Input": "([]{}([]{}]))",
-    "ExpectedResult": false
+    "AcceptedResult": false
   }
 ]

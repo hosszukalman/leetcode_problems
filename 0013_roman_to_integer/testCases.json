@@ -1,14 +1,14 @@
 [
   {
     "Input": "III",
-    "ExpectedResult": 3
+    "AcceptedResult": 3
   },
   {
     "Input": "LVIII",
-    "ExpectedResult": 58
+    "AcceptedResult": 58
   },
   {
     "Input": "MCMXCIV",
-    "ExpectedResult": 1994
+    "AcceptedResult": 1994
   }
 ]

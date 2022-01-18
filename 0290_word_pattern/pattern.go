@@ -11,7 +11,7 @@ import (
 type TestCase struct {
 	InputPattern   string
 	InputString    string
-	ExpectedResult bool
+	AcceptedResult bool
 }
 
 type TestCases []TestCase
@@ -28,8 +28,8 @@ func main() {
 
 	for _, testCase := range testCases {
 		res := wordPattern(testCase.InputPattern, testCase.InputString)
-		if testCase.ExpectedResult != res {
-			fmt.Printf("Something is not ok with the result: Input pattern: %v, input string: %v, excepted: %v, res: %+v\n", testCase.InputPattern, testCase.InputString, testCase.ExpectedResult, res)
+		if testCase.AcceptedResult != res {
+			fmt.Printf("Something is not ok with the result: Input pattern: %v, input string: %v, excepted: %v, res: %+v\n", testCase.InputPattern, testCase.InputString, testCase.AcceptedResult, res)
 		}
 	}
 }

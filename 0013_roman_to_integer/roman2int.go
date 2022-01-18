@@ -9,7 +9,7 @@ import (
 
 type TestCase struct {
 	Input          string
-	ExpectedResult int
+	AcceptedResult int
 }
 
 type TestCases []TestCase
@@ -26,7 +26,7 @@ func main() {
 
 	for _, testCase := range testCases {
 		res := romanToInt(testCase.Input)
-		if testCase.ExpectedResult != res {
+		if testCase.AcceptedResult != res {
 			fmt.Printf("Something is not ok with the result: Test case: %#v, res: %+v\n", testCase, res)
 		}
 	}

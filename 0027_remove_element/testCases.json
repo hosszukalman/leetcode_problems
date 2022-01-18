@@ -2,7 +2,7 @@
   {
     "InputNums": [3,2,2,3],
     "InputVal": 3,
-    "ExpectedResult": {
+    "AcceptedResult": {
       "Result": 2,
       "ModifiedInput": [2,2]
     }
@@ -10,7 +10,7 @@
   {
     "InputNums": [0,1,2,2,3,0,4,2],
     "InputVal": 2,
-    "ExpectedResult": {
+    "AcceptedResult": {
       "Result": 5,
       "ModifiedInput": [0,0,1,3,4]
     }

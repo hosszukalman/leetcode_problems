@@ -16,7 +16,7 @@ type TreeNode struct {
 
 type TestCase struct {
 	Input          *TreeNode
-	ExpectedResult int
+	AcceptedResult int
 }
 
 type TestCases []TestCase
@@ -33,8 +33,8 @@ func main() {
 
 	for _, testCase := range testCases {
 		res := sumRootToLeaf(testCase.Input)
-		if testCase.ExpectedResult != res {
-			fmt.Printf("Something is not ok with the result: Input: %v, excepted: %v, res: %+v\n", testCase.Input, testCase.ExpectedResult, res)
+		if testCase.AcceptedResult != res {
+			fmt.Printf("Something is not ok with the result: Input: %v, excepted: %v, res: %+v\n", testCase.Input, testCase.AcceptedResult, res)
 		}
 	}
 }
