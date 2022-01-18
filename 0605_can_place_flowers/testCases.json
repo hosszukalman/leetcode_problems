@@ -1,0 +1,52 @@
+[
+  {
+    "InputFlowerbed": [1,0,0,0,1],
+    "InputNumber": 1,
+    "AcceptedResult": true
+  },
+  {
+    "InputFlowerbed": [1,0,0,0,1],
+    "InputNumber": 2,
+    "AcceptedResult": false
+  },
+  {
+    "InputFlowerbed": [1,0,0,0,0,1],
+    "InputNumber": 2,
+    "AcceptedResult": false
+  },
+  {
+    "InputFlowerbed": [1,0,0,0,0,0,1],
+    "InputNumber": 2,
+    "AcceptedResult": true
+  },
+  {
+    "InputFlowerbed": [0,0,1,0,1],
+    "InputNumber": 1,
+    "AcceptedResult": true
+  },
+  {
+    "InputFlowerbed": [0],
+    "InputNumber": 1,
+    "AcceptedResult": true
+  },
+  {
+    "InputFlowerbed": [1,0,0,0],
+    "InputNumber": 1,
+    "AcceptedResult": true
+  },
+  {
+    "InputFlowerbed": [1,0,0,0,1,0,0],
+    "InputNumber": 2,
+    "AcceptedResult": true
+  },
+  {
+    "InputFlowerbed": [1,0,0,0,0],
+    "InputNumber": 2,
+    "AcceptedResult": true
+  },
+  {
+    "InputFlowerbed": [0,0],
+    "InputNumber": 2,
+    "AcceptedResult": false
+  }
+]

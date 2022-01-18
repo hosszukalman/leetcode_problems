@@ -130,6 +130,15 @@ https://leetcode.com/problems/word-pattern/
 Runtime: 0 ms, Memory Usage: 2 MB  
 Faster than 100.00% of Go online submissions for Word Pattern.
 
+### 605. Can Place Flowers
+
+https://leetcode.com/problems/can-place-flowers/
+
+#### Go
+
+Runtime: 16 ms, Memory Usage: 6.1 MB  
+Faster than 82.14% of Go online submissions for Can Place Flowers.
+
 ### 701. Insert into a Binary Search Tree
 
 https://leetcode.com/problems/insert-into-a-binary-search-tree/
