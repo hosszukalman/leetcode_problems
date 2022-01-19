@@ -1,0 +1,97 @@
+[
+  {
+    "Input": {
+      "Val": 3,
+      "Next": {
+        "Val": 2,
+        "Next": {
+          "Val": 0,
+          "Next": {
+            "Val": -4,
+            "Next": {
+              "Val": 2
+            }
+          }
+        }
+      }
+    },
+    "AcceptedResult": {
+      "Val": 2,
+      "Next": {
+        "Val": 0,
+        "Next": {
+          "Val": -4,
+          "Next": {
+            "Val": 2
+          }
+        }
+      }
+    }
+  },
+  {
+    "Input": {
+      "Val": 1,
+      "Next": {
+        "Val": 2,
+        "Next": {
+          "Val": 1
+        }
+      }
+    },
+    "AcceptedResult": {
+      "Val": 1,
+      "Next": {
+        "Val": 2,
+        "Next": {
+          "Val": 1
+        }
+      }
+    }
+  },
+  {
+    "Input": {
+      "Val": 1
+    }
+  },
+  {
+    "Input": {
+      "Val": -1,
+      "Next": {
+        "Val": -7,
+        "Next": {
+          "Val": 7,
+          "Next": {
+            "Val": -4,
+            "Next": {
+              "Val": 19,
+              "Next": {
+                "Val": 6,
+                "Next": {
+                  "Val": -9,
+                  "Next": {
+                    "Val": -5,
+                    "Next": {
+                      "Val": -2,
+                      "Next": {
+                        "Val": -5
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "AcceptedResult": {
+      "Val": -5,
+      "Next": {
+        "Val": -2,
+        "Next": {
+          "Val": -5
+        }
+      }
+    }
+  }
+]
