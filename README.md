@@ -148,6 +148,15 @@ https://leetcode.com/problems/insert-into-a-binary-search-tree/
 Accepted, Runtime: 28 ms, Memory Usage: 7.5 MB  
 Faster than 92.76% of Go online submissions for Insert into a Binary Search Tree.
 
+### 875. Koko Eating Bananas
+
+https://leetcode.com/problems/koko-eating-bananas/
+
+#### Go
+
+Accepted, Runtime: 21 ms, Memory Usage: 7.1 MB  
+Faster than 97.14% of Go online submissions for Koko Eating Bananas.
+
 ### 1022. Sum of Root To Leaf Binary Numbers
 
 https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/
