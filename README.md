@@ -166,6 +166,15 @@ https://leetcode.com/problems/koko-eating-bananas/
 Accepted, Runtime: 21 ms, Memory Usage: 7.1 MB  
 Faster than 97.14% of Go online submissions for Koko Eating Bananas.
 
+### 941. Valid Mountain Array
+
+https://leetcode.com/problems/valid-mountain-array/
+
+#### Go
+
+Accepted, Runtime: 20 ms, Memory Usage: 6.7 MB  
+Faster than 98.44% of Go online submissions for Valid Mountain Array.
+
 ### 1022. Sum of Root To Leaf Binary Numbers
 
 https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/
