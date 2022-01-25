@@ -1,0 +1,22 @@
+[
+  {
+    "Input": "USA",
+    "AcceptedResult": true
+  },
+  {
+    "Input": "FlaG",
+    "AcceptedResult": false
+  },
+  {
+    "Input": "aaaFD",
+    "AcceptedResult": false
+  },
+  {
+    "Input": "leetcode",
+    "AcceptedResult": true
+  },
+  {
+    "Input": "Google",
+    "AcceptedResult": true
+  }
+]

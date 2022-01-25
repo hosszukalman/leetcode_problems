@@ -130,6 +130,15 @@ https://leetcode.com/problems/word-pattern/
 Runtime: 0 ms, Memory Usage: 2 MB  
 Faster than 100.00% of Go online submissions for Word Pattern.
 
+### 520. Detect Capital
+
+https://leetcode.com/problems/detect-capital/
+
+#### Go
+
+Runtime: 0 ms, Memory Usage: 2.2 MB  
+Faster than 100.00% of Go online submissions for Detect Capital.
+
 ### 605. Can Place Flowers
 
 https://leetcode.com/problems/can-place-flowers/
