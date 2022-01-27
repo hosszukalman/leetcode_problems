@@ -1,0 +1,38 @@
+[
+  {
+    "Input1": {
+      "Val": 2,
+      "Left": {
+        "Val": 1
+      },
+      "Right": {
+        "Val": 4
+      }
+    },
+    "Input2": {
+      "Val": 1,
+      "Left": {
+        "Val": 0
+      },
+      "Right": {
+        "Val": 3
+      }
+    },
+    "AcceptedResult": [0,1,1,2,3,4]
+  },
+  {
+    "Input1": {
+      "Val": 1,
+      "Right": {
+        "Val": 8
+      }
+    },
+    "Input2": {
+      "Val": 8,
+      "Left": {
+        "Val": 1
+      }
+    },
+    "AcceptedResult": [1,1,8,8]
+  }
+]

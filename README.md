@@ -183,3 +183,12 @@ https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/
 
 Runtime: 0 ms, Memory Usage: 3.4 MB  
 Faster than 100.00% of Go online submissions for Sum of Root To Leaf Binary Numbers.
+
+### 1305. All Elements in Two Binary Search Trees
+
+https://leetcode.com/problems/all-elements-in-two-binary-search-trees/
+
+#### Go
+
+Runtime: 92 ms, Memory Usage: 8 MB  
+Faster than 98.46% of Go online submissions for All Elements in Two Binary Search Trees.
