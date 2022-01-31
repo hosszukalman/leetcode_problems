@@ -192,3 +192,12 @@ https://leetcode.com/problems/all-elements-in-two-binary-search-trees/
 
 Runtime: 92 ms, Memory Usage: 8 MB  
 Faster than 98.46% of Go online submissions for All Elements in Two Binary Search Trees.
+
+### 1672. Richest Customer Wealth
+
+https://leetcode.com/problems/richest-customer-wealth/
+
+#### Go
+
+Runtime: 0 ms, Memory Usage: 3.3 MB  
+Faster than 100.00% of Go online submissions for Richest Customer Wealth.
