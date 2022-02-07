@@ -130,6 +130,15 @@ https://leetcode.com/problems/word-pattern/
 Runtime: 0 ms, Memory Usage: 2 MB  
 Faster than 100.00% of Go online submissions for Word Pattern.
 
+### 389. Find the Difference
+
+https://leetcode.com/problems/find-the-difference/
+
+#### Go
+
+Runtime: 0 ms, Memory Usage: 2.6 MB  
+Faster than 100% of Go online submissions for Find the Difference.
+
 ### 520. Detect Capital
 
 https://leetcode.com/problems/detect-capital/

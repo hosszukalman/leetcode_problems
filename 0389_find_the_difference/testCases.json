@@ -1,0 +1,12 @@
+[
+  {
+    "Input1": "abcd",
+    "Input2": "abcde",
+    "AcceptedResult": "e"
+  },
+  {
+    "Input1": "",
+    "Input2": "y",
+    "AcceptedResult": "y"
+  }
+]
