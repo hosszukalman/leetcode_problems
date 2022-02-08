@@ -1,0 +1,18 @@
+[
+  {
+    "Input": 38,
+    "AcceptedResult": 2
+  },
+  {
+    "Input": 387010,
+    "AcceptedResult": 1
+  },
+  {
+    "Input": 0,
+    "AcceptedResult": 0
+  },
+  {
+    "Input": 1,
+    "AcceptedResult": 1
+  }
+]

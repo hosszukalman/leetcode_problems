@@ -121,6 +121,15 @@ https://leetcode.com/problems/add-binary/
 Runtime: 0 ms, Memory Usage: 3 MB  
 Faster than 100.00% of Go online submissions for Add Binary.
 
+### 258. Add Digits
+
+https://leetcode.com/problems/add-digits/
+
+#### Go
+
+Runtime: 0 ms, Memory Usage: 2.2 MB  
+Faster than 100% of Go online submissions for Add Digits.
+
 ### 290. Word Pattern
 
 https://leetcode.com/problems/word-pattern/
