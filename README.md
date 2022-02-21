@@ -121,6 +121,15 @@ https://leetcode.com/problems/add-binary/
 Runtime: 0 ms, Memory Usage: 3 MB  
 Faster than 100.00% of Go online submissions for Add Binary.
 
+### 169. Majority Element
+
+https://leetcode.com/problems/majority-element/
+
+#### Go
+
+Runtime: 12 ms, Memory Usage: 6.1 MB  
+Faster than 98.68% of Go online submissions for Majority Element.
+
 ### 258. Add Digits
 
 https://leetcode.com/problems/add-digits/
