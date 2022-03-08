@@ -121,6 +121,15 @@ https://leetcode.com/problems/add-binary/
 Runtime: 0 ms, Memory Usage: 3 MB  
 Faster than 100.00% of Go online submissions for Add Binary.
 
+### 141. Linked List Cycle
+
+https://leetcode.com/problems/linked-list-cycle/
+
+#### Go
+
+Runtime: 4 ms, Memory Usage: 4.3 MB  
+Faster than 98.14% of Go online submissions for Linked List Cycle.
+
 ### 169. Majority Element
 
 https://leetcode.com/problems/majority-element/
